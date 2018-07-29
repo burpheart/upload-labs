@@ -4,7 +4,7 @@
 
     # set this to your client machine or proxy,
     # comment it out if you don't want protection
-    $allow_ip = '10.20.30.40';
+   // $allow_ip = '10.20.30.40';
     # define this if you want PHPProxy not to connect
     # directly, but use parent proxy instead
    # $proxy_host = 'proxy.ml.lv';
@@ -17,8 +17,8 @@
 
 # end of config
 
-    if (!empty($allow_ip) && $REMOTE_ADDR != $allow_ip)
-        exit;
+    //if (!empty($allow_ip) && $REMOTE_ADDR != $allow_ip)
+    //    exit;
 
 function debug ($msg) {
     global $debug;
